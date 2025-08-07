@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closet Capsule</title>
+    <!-- Fontawesome cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- css file link -->
+     <link rel="stylesheet" href="./style.css">
+    <!-- Google font link -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&family=Kaisei+Tokumin&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+     <link rel="icon" href="./favicon_io (1)/favicon-16x16.png">
+
+</head>
+<body>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-xl navbar-light bg-white py-4 fixed-top">
+  <div class="container">
+    <!-- Brand -->
+    <a class="navbar-brand d-flex justify-content-between align-items-center">
+      <i class="fa-solid fa-bag-shopping bag"></i>
+      <span class="text-uppercase fw-lighter ms-4">Closet Capsule</span>
+    </a>
+
+    <!-- Right icons -->
+    <div class="order-lg-2 nav-btns">
+      <button type="button" class="btn position-relative">
+        <i class="fa fa-shopping-cart"></i>
+        <span class="position-absolute top-1 start-100 translate-middle badge bg-primary">5</span>
+      </button>
+
+      <button type="button" class="btn position-relative">
+        <i class="fa fa-heart"></i>
+        <span class="position-absolute top-1 start-100 translate-middle badge bg-primary">2</span>
+      </button>
+
+      <button type="button" class="btn position-relative">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+
+    <!-- Toggler Button -->
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible Content -->
+    <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+      <ul class="navbar-nav mx-auto text-center">
+        <li class="nav-item px-2 py-2">
+          <a class="nav-link text-uppercase text-dark" href="#">Home</a>
+        </li>
+                <li class="nav-item px-2 py-2">
+          <a class="nav-link text-uppercase text-dark" href="#collection">collection</a>
+        </li>
+                <li class="nav-item px-2 py-2">
+          <a class="nav-link text-uppercase text-dark" href="#special">special</a>
+        </li>
+                <li class="nav-item px-2 py-2">
+          <a class="nav-link text-uppercase text-dark" href="#blogs">blogs</a>
+        </li>
+                <li class="nav-item px-2 py-2 ">
+          <a class="nav-link text-uppercase text-dark" href="#about-us">about-us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Navvbar ends here -->
+
+
+<!-- Header starts here -->
+    <header id="header" class="vh-100 carousel slide" data-bs-ride="carousel">
+        <div class="container h-100 d-flex align-items-center carousel-inner">
+            <div class="text-center carousel-item active">
+                <h2 class="text-capitalize text-white">Best collection</h2>
+                <h1 class="text-uppercase py-2 fw-bold text-white" style="letter-spacing: 4px;">new arrivals</h1>
+                <a href="" class="btn mt-3 text-uppercase">shop now</a>
+            </div>
+             <div class="text-center carousel-item">
+                <h2 class="text-capitalize text-white">Best price & offer</h2>
+                <h1 class="text-uppercase py-2 fw-bold text-white" style="letter-spacing: 4px;">new seasons</h1>
+                <a href="" class="btn mt-3 text-uppercase">buy now</a>
+            </div>
+        </div>
+    </header>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#header" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+     <button class="carousel-control-prev" type="button" data-bs-target="#header" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <!-- Header ends here -->
+     
+
+    <!-- Collection -->
+      <section id="collection" class="py-5">
+        <div class="container">
+          <div class="title text-center">
+            <h2 class="position-relative  d-inline-block">New Collection</h2>
+          </div>
+
+          <div class="row g-0">
+              <div class="d-flex flex-wrap justify-content-center mt-5" id="collection-btn">
+                <button type="button" class="btn text-dark m-2 active-filter-btn">All</button>
+                <button type="button" class="btn text-dark m-2">Best Sellers</button>
+                <button type="button" class="btn text-dark m-2">Featured</button>
+                <button type="button" class="btn text-dark m-2">New Arrival</button>
+              </div>
+
+              <div class="collection-list mt-4 row gx-0 gy-3">
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="collection-img ">
+                      <img src="./clothes/cargo2.jpg" alt="" class="w-100">
+                      <span class="sale position-absolute bg-primary text-white d-flex align-items-center justify-content-center"</span>
+                    </div>
+                      <div class="text-center">
+                          <div class="rating mt-3">
+                            <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                           <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                          </div>
+                          <p class="text-capitalize my-1">Military cargo 8 pockets</p>
+                          <span class="fw-bold">₹  1000</span>
+                      </div>
+                </div>
+                <!-- second item -->
+                   <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="collection-img">
+                      <img src="./clothes/mayank.jpg" alt="" class="w-100">
+                      <span class="sale position-absolute bg-primary text-white d-flex align-items-center justify-content-center"</span>
+                    </div>
+                      <div class="text-center">
+                          <div class="rating mt-3">
+                            <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                           <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                          </div>
+                          <p class="text-capitalize my-1">Uniqlo Cargo pants</p>
+                          <span class="fw-bold">₹  899</span>
+                      </div>
+                </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="collection-img">
+                      <img src="./clothes/cargo3.jpg" alt="" class="w-100">
+                      <span class="sale position-absolute bg-primary text-white d-flex align-items-center justify-content-center"</span>
+                    </div>
+                      <div class="text-center">
+                          <div class="rating mt-3">
+                            <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                           <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                          </div>
+                          <p class="text-capitalize my-1">Tommy hilfiger Cargo pants</p>
+                          <span class="fw-bold">₹  899</span>
+                      </div>
+                </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="collection-img">
+                      <img src="./clothes/linen4.jpg" alt="" class="w-100">
+                      <span class="sale position-absolute bg-primary text-white d-flex align-items-center justify-content-center"</span>
+                    </div>
+                      <div class="text-center">
+                          <div class="rating mt-3">
+                            <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                           <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                          </div>
+                          <p class="text-capitalize my-1">John Players (Premium Linen Pants)</p>
+                          <span class="fw-bold">₹ 999</span>
+                      </div>
+                </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="collection-img">
+                      <img src="./clothes/nike-polo5.jpg" alt="" class="w-100">
+                      <span class="sale position-absolute bg-primary text-white d-flex align-items-center justify-content-center"</span>
+                    </div>
+                      <div class="text-center">
+                          <div class="rating mt-3">
+                            <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                           <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                          </div>
+                          <p class="text-capitalize my-1">Nike Old School Polo</p>
+                          <span class="fw-bold">₹ 399</span>
+                      </div>
+                </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="collection-img">
+                      <img src="./clothes/cargo6.jpg" alt="" class="w-100">
+                      <span class="sale position-absolute bg-primary text-white d-flex align-items-center justify-content-center"</span>
+                    </div>
+                      <div class="text-center">
+                          <div class="rating mt-3">
+                            <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                           <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                          </div>
+                          <p class="text-capitalize my-1">Cargo Pants</p>
+                          <span class="fw-bold">₹ 699</span>
+                      </div>
+                </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="collection-img">
+                      <img src="./clothes/cargo2.jpg" alt="" class="w-100">
+                      <span class="sale position-absolute bg-primary text-white d-flex align-items-center justify-content-center"</span>
+                    </div>
+                      <div class="text-center">
+                          <div class="rating mt-3">
+                            <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                           <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                          </div>
+                          <p class="text-capitalize my-1">Military cargo 8 pockets</p>
+                          <span class="fw-bold">₹ 999</span>
+                      </div>
+                </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="collection-img">
+                      <img src="./clothes/cargo8.jpg" alt="" class="w-100">
+                      <span class="sale position-absolute bg-primary text-white d-flex align-items-center justify-content-center"</span>
+                    </div>
+                      <div class="text-center">
+                          <div class="rating mt-3">
+                            <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                           <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                          </div>
+                          <p class="text-capitalize my-1">Cargo Pants</p>
+                          <span class="fw-bold">₹ 799</span>
+                      </div>
+                </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="collection-img">
+                      <img src="./clothes/cargo9.jpg" alt="" class="w-100">
+                      <span class="sale position-absolute bg-primary text-white d-flex align-items-center justify-content-center"</span>
+                    </div>
+                      <div class="text-center">
+                          <div class="rating mt-3">
+                            <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                           <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                          </div>
+                          <p class="text-capitalize my-1">Tommy Hilfiger (Navy Blue Cargo)</p>
+                          <span class="fw-bold">₹ 999</span>
+                      </div>
+                </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="collection-img">
+                      <img src="./clothes/shirt10.jpg" alt="" class="w-100">
+                      <span class="sale position-absolute bg-primary text-white d-flex align-items-center justify-content-center"</span>
+                    </div>
+                      <div class="text-center">
+                          <div class="rating mt-3">
+                            <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                           <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                            <span class="text-primary">
+                              <i class="fas fa-star"></i>
+                            </span>
+                          </div>
+                          <p class="text-capitalize my-1">Powder Blue Shirt</p>
+                          <span class="fw-bold">₹ 199</span>
+                      </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+    <!-- Collection ends here -->
+
+    <!-- Special Products -->
+     <section id="special" class="py-5">
+        <div class="container">
+            <div class="title text-center py-5">
+              <h2 class="position-relative d-inline-block">Special Selection</h2>
+            </div>
+
+            <div class="special-list row g-0">
+                <div class="col-md-6 col-lg-4 col-xl-3 p2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="./shoes/nike peaguses.jpg" alt="" class="w-100">
+                        <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="fa fa-heart"></i>
+                        </span>
+                    </div>
+
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Nike peaguses</p>
+                        <div class="fw-bold d-block">₹2000</div>
+                            <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+                    </div>
+                </div>
+                <!-- second item -->
+                 <div class="col-md-6 col-lg-4 col-xl-3 p2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="./shoes/nike dunk low.png" alt="" class="w-100">
+                        <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="fa fa-heart"></i>
+                        </span>
+                    </div>
+
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Nike peaguses</p>
+                        <div class="fw-bold d-block">₹2000</div>
+                            <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+                    </div>
+                </div>
+                <!-- third -->
+                 <div class="col-md-6 col-lg-4 col-xl-3 p2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="./shoes/pandas.avif" alt="" class="w-100">
+                        <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="fa fa-heart"></i>
+                        </span>
+                    </div>
+
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Nike peaguses</p>
+                        <div class="fw-bold d-block">₹2000</div>
+                            <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+                    </div>
+                </div>
+                <!-- 4 -->
+                 <div class="col-md-6 col-lg-4 col-xl-3 p2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="./shoes/cap.jpg" alt="" class="w-100" "style="height: 300px;">
+                        <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="fa fa-heart"></i>
+                        </span>
+                    </div>
+
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Nike peaguses</p>
+                        <div class="fw-bold d-block">₹2000</div>
+                            <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+     <!-- End of special products -->
+
+     <!-- offers -->
+        <section id="offers" class="py-5">
+              <div class="container">
+                  <div class="row d-flex align-items-center text-center justify-content-lg-start text-lg-start">
+                      <div class="offers-content">
+                          <span class="text-white">Discount Up To 40%</span>
+                          <h2 class="mt-2 text-white">Grand Sale Offer!</h2>
+                          <a href="#" class="btn">Buy Now</a>
+                      </div>
+                  </div>
+              </div>
+        </section>
+      <!-- end of offers -->
+
+        <!-- blogs -->
+              <section id="blogs" class="py-5">
+                    <div class="container">
+                          <div class="title text-center py-5">
+                              <h2 class="position-relative d-inline-block">Our Latest Blog</h2>
+                          </div>
+
+                          <div class="row">
+                            <div class="card border-0 col-md-6 col-lg-4 bg-transparent">
+                                <img src="./blogs images/Thrifting-is-also-a-collection-of-Vintage-clothing_.jpg" alt="">
+                                  <div class="card-body px-0">
+                                    <h4 class="card-title">Why Thrifting is the Future of Fashion</h4>
+                                    <p class="card-text mt-3 text-muted">Thrifting is reshaping fashion by promoting sustainability, affordability, and individuality. As more people reject fast fashion, thrift stores offer a unique way to shop consciously without compromising style. Every piece has a story, and reusing clothing reduces environmental impact. At Closet Capsule, we believe thrifting isn’t just a trend — it’s the future of fashion.</p>
+                                    <p class="card-text">
+                                        <small class="text-muted">
+                                            <span class="fw-bold">Author:</span>Mayank Saini
+                                        </small>
+                                    </p>
+                                        <a href="" class="btn">Read More</a>
+                                  </div>
+                            </div>
+                            <!-- second blog -->
+                             <div class="card border-0 col-md-6 col-lg-4 bg-transparent">
+                                <img src="./blogs images/2.jpg" alt="">
+                                  <div class="card-body px-0">
+                                    <h4 class="card-title">The Eco Power of Secondhand Fashion</h4>
+                                    <p class="card-text mt-3 text-muted">Thrifting isn’t just about saving money—it’s about saving the planet. Every secondhand purchase helps reduce textile waste, lowers carbon emissions, and minimizes the demand for new clothing production. By choosing pre-loved fashion, you support a circular economy that promotes sustainability. Thrift smarter, waste less, and make a conscious impact with every outfit you wear.</p>
+                                    <p class="card-text">
+                                        <small class="text-muted">
+                                            <span class="fw-bold">Author:</span>Mayank Saini
+                                        </small>
+                                    </p>
+                                        <a href="" class="btn">Read More</a>
+                                  </div>
+                            </div>
+                            <!-- thrid blog -->
+                             <div class="card border-0 col-md-6 col-lg-4 bg-transparent">
+                                <img src="./blogs images/thrift3.webp" alt="">
+                                  <div class="card-body px-0">
+                                    <h4 class="card-title">Closet Goals on a Budget</h4>
+                                    <p class="card-text mt-3 text-muted">Create the wardrobe of your dreams without draining your wallet. Thrifting lets you explore unique styles, premium brands, and timeless pieces — all at affordable prices. Whether you’re chasing vintage vibes or modern trends, every thrift haul brings new treasures. Style smart, shop sustainably, and let your fashion goals align with your budget.</p>
+                                    <p class="card-text">
+                                        <small class="text-muted">
+                                            <span class="fw-bold">Author:</span>Mayank Saini
+                                        </small>
+                                    </p>
+                                        <a href="" class="btn">Read More</a>
+                                  </div>
+                            </div>
+                          </div>
+                    </div>
+              </section>
+         <!-- end of blogs -->
+
+         <!-- About-us -->
+                <section id="about" class="py-5">
+                      <div class="container">
+                          <div class="row gy-lg-5 align-items-center">
+                                <div class="col-lg-6 order-lg-1 text-center text-lg">
+                                      <div class="title pt-3 pb-5">
+                                            <h2 class="position-relative d-inline-block ms-4">About Us</h2>
+                                      </div>
+                                        <p class="lead text-muted">Closet Capsule – Where Style Meets Sustainability at Unbeatable Prices.</p>
+                                        <p class="fs-5"> Closet Capsule is a curated thrift store redefining the way young India shops for fashion. Founded by Mayank Saini, a student with a strong entrepreneurial spirit, the brand was born out of the need to make trendy, branded clothing accessible to everyone — especially those who find retail prices out of reach. Closet Capsule brings together a handpicked selection of pre-loved, high-quality clothing that blends affordability with sustainability. Every piece tells a story and gives you a chance to express your unique style while contributing to a greener planet.
+
+What sets Closet Capsule apart is its focus on style, budget-friendliness, and purpose. The store is built for people who want to look great, feel confident, and make conscious fashion choices. By reselling fashion-forward outfits from popular brands at affordable prices, it empowers customers to shop smarter.
+
+With ambitious plans to scale, Closet Capsule aims to become a recognized name in the circular fashion space. Through community engagement, online presence, and a strong mission, it is shaping the future of fashion — one thrifted item at a time. Closet Capsule isn’t just a store; it’s a lifestyle for the new-age, eco-conscious shopper.</p>
+                                </div>
+                                  <div class="col-lg-6 order-lg-0">
+                                        <img src="./about-us/WhatsApp Image 2025-08-06 at 16.50.19_05a32b7b.jpg" alt="" class="img-fluid">
+                                  </div>
+                          </div>
+                      </div>
+                </section>
+          <!-- End of about us -->
+
+
+          <!-- footer -->
+                <footer class="bg-dark py-5">
+                    <div class="container">
+                          <div class="row text-white g-4">
+                                <div class="col-md-6 col-lg-3">
+                                    <a href="navbar.html" class="text-uppercase text-decoration-none brand text-white">Closet  Capsule</a>
+                                    <p class="text-white text-muted mt-3">Closet Capsule is your go-to thrift store for curated, pre-loved fashion. We believe in sustainability, affordability, and personal style — one unique piece at a time.                                      
+                                    </p>
+                                </div>
+
+                                <div class="col-md-6 col-lg-3">
+                                        <h5 class="fw-light">Links</h5>
+                                        <ul class="list-unstyled">
+                                              <li class="my-3">
+                                                    <a href="#" class="text-white text-decoration-none text-muted"  id="bullets">
+                                                      <i class="fas fa-chevron-right me-1"></i>Home
+                                                    </a>
+                                              </li>
+                                                <li class="my-3">
+                                                    <a href="#" class="text-white text-decoration-none text-muted"  id="bullets">
+                                                      <i class="fas fa-chevron-right me-1"></i>Collections
+                                                    </a>
+                                              </li>
+                                                <li class="my-3">
+                                                    <a href="#" class="text-white text-decoration-none text-muted"  id="bullets">
+                                                      <i class="fas fa-chevron-right me-1"></i>Blogs
+                                                    </a>
+                                              </li>
+                                                <li class="my-3">
+                                                    <a href="#" class="text-white text-decoration-none text-muted"  id="bullets">
+                                                      <i class="fas fa-chevron-right me-1"></i>About-us
+                                                    </a>
+                                              </li>
+                                        </ul>
+                                </div>
+
+                                <div class="col-md-6 col-lg-3">
+                                      <h5 class="fw-light mb-3">Contact Us</h5>
+                                          <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                                                <span class="me-3">
+                                                      <i class="fas fa-map-marked-alt"></i>
+                                                </span>
+                                                <span class="fw-light">
+                                                    HNO 623/2 Ramnagar Pushkar Road Ajmer , Street No 5, 305001
+                                                </span>
+                                          </div>
+                                          <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                                                <span class="me-3">
+                                                      <i class="fas fa-envelope"></i>
+                                                </span>
+                                                <span class="fw-light">
+                                                    sainimayank34743@gmail.com
+                                                </span>
+                                          </div>
+                                          <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                                                <span class="me-3">
+                                                      <i class="fas fa-phone-alt"></i>
+                                                </span>
+                                                <span class="fw-light">
+                                                    +91 7340067009
+                                                </span>
+                                          </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-3">
+                                    <h5 class="fw-light mb-3">
+                                          Follow Us
+                                          <div>
+                                              <ul class="list-unstyled d-flex">
+                                                  <li>
+                                                      <a href="" class="text-white text-decoration-none text-muted fs-4 ms-2">
+                                                          <i class="fa-brands fa-facebook-f"></i>
+                                                      </a>
+                                                  </li>
+                                                   <li>
+                                                      <a href="" class="text-white text-decoration-none text-muted fs-4 ms-2">
+                                                          <i class="fa-brands fa-instagram"></i>
+                                                      </a>
+                                                  </li>
+                                                   <li>
+                                                      <a href="" class="text-white text-decoration-none text-muted fs-4 ms-3">
+                                                          <i class="fa-brands fa-twitter"></i>
+                                                  </li>
+                                                   <li>
+                                                      <a href="" class="text-white text-decoration-none text-muted fs-4 ">
+                                                         <i class="fa-brands fa-linkedin-in"></i>
+                                                      </a>
+                                                  </li>
+                                              </ul>
+                                          </div>
+                                    </h5>
+                                </div>
+                          </div>
+                    </div>
+                </footer>
+           <!-- end of footer -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

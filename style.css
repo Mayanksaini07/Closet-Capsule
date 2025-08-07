@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&family=Kaisei+Tokumin&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --lg-font: 'Kaisei Tokumin', serif;
+    --sm-font: 'Poppins', sans-serif;
+    --pink: #e5345b;
+}
+
+
+body {
+    font-family: var(--sm-font);
+}
+
+.bg-primary {
+    background-color: var(--pink) !important;
+}
+
+.btn:not(.nav-btns button){
+    background-color: #ffff;
+    color: rgb(85,85,85);
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: 1px solid rgb(85,85,85);
+}
+.btn:not(.nav-btns button):hover{
+    background-color: var(--pink);
+    color: #ffff;
+    border-color: var(--pink);
+}
+
+.text-primary{
+    color: var(--pink)!important;
+}
+
+
+.bag {
+    font-size: 3rem;
+    width: 30px;
+}
+
+.navbar {
+    box-shadow: 0 3px 9px 3px rgba(0,0,0,0.1);
+}
+
+.navbar-brand span {
+    letter-spacing: 3px;
+    font-family: var(--lg-font);
+}
+
+.nav-link:hover {
+    color: var(--pink) !important;
+}
+
+/* header */
+
+
+
+body {
+    font-family: var(--sm-font);
+    padding-top: 104px; 
+}
+
+#header {
+    background: url("./images/modern-man-casual-outfit-showing-shopping-bag-okay-sign-winking-camera-recommending-shop-s.jpg") center/cover no-repeat;
+    height: calc(100vh-104px);
+}
+
+.carousel-inner h1{
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+
+.carousel-item .btn{
+    border-color: #fff!important;
+}
+
+.carousel-item .btn:hover{
+    border-color: var(--pink);
+}
+
+.title h2::before{
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: var(--pink);
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#collection-btn button:hover{
+    color: #fff!important;
+}
+
+.active-filter-btn{
+    background-color: var(--pink)!important;
+    color: #fff!important;
+    border-color: var(--pink)!important;
+}
+
+.collection-img span{
+    top: 20px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+
+
+.special-img span{
+    top: 20px;
+    right: 30px;
+}
+.special-list .btn{
+    padding: 8px 20px!important ;
+}
+
+.special-img img{
+    transition: all 0.3s ease-in-out;
+}
+
+.special-img img:hover{
+    transform: scale(1.05);
+}
+
+#offers{
+    background: url(./background/offer_img.jpg) center/cover no-repeat;
+    width: 100%;
+}
+
+#offers .row{
+    min-height: 90vh;
+}
+
+.offers-content span{
+    font-size: 50px;
+}
+
+.offers-content h2{
+    font-size: 80px;
+    font-family: var(--lg-font);
+}
+
+.offers-content .btn{
+    border-color: transparent!important;
+    margin-top: 1rem;
+}
+
+#about{
+    background-color: rgba(0,0,0,0.05);
+}
+
+footer .brand{
+    font-family: var(--lg-font);
+    letter-spacing: 2px;
+}
+.text-muted {
+  color: #6c757d !important;
+}
+
+
+#bullets{
+    letter-spacing: 2px;
+}
+
+footer a{
+    transition: color 0.3s ease;
+}
+
+footer a:hover{
+    color: var(--pink)!important;
+}
